@@ -4,7 +4,7 @@
 #include <DMainWindow>
 #include "leftsidebar.h"
 #include <QStackedLayout>
-
+#include <QPushButton>
 using namespace Dtk::Core;
 using namespace Dtk::Widget;
 class AndroidWindow : public DMainWindow
@@ -16,9 +16,12 @@ public:
     ~AndroidWindow();
 private:
     void handleLeftSideBarChanged(int index);
+private slots:
+    void mensajerecibido(const QString &msj);
 
 private:
     LeftSideBar *m_leftSideBar;
     QStackedLayout *m_stackedLayout;
+    QPushButton *btn;
 };
 #endif // ANDROIDWINDOW_H

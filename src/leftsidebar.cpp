@@ -3,6 +3,7 @@
 #include <QPushButton>
 #include <QPainter>
 #include <QMap>
+#include <QColor>
 
 LeftSideBar::LeftSideBar(QWidget *parent)
     : QWidget(parent), m_layout(new QVBoxLayout),
@@ -13,7 +14,7 @@ LeftSideBar::LeftSideBar(QWidget *parent)
     m_layout->setSpacing(5);
 
     setLayout(m_layout);
-    setFixedWidth(130);
+    setFixedWidth(160);
     initButtons();
 
     connect(m_buttonGroup, static_cast<void (QButtonGroup::*)(int)>(&QButtonGroup::buttonClicked), this, &LeftSideBar::buttonClicked);
@@ -59,5 +60,6 @@ void LeftSideBar::initButtons()
     }
 
     m_buttonGroup->button(0)->setChecked(true);
+
     m_layout->addStretch();
 }

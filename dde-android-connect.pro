@@ -1,9 +1,9 @@
-QT       += core gui widgets svg multimedia multimediawidgets xml network sql dbus
+QT       +=  core gui widgets svg multimedia multimediawidgets xml network sql dbus websockets
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 
-CONFIG +=plugin c++11 link_pkgconfig
+CONFIG +=plugin c++11 link_pkgconfig console
 
 
 PKGCONFIG += dtkwidget
@@ -24,11 +24,13 @@ SOURCES += \
     src/androidwindow.cpp \
     src/leftsidebar.cpp \
     src/pushbutton.cpp \
+    src/server/server.cpp \
      src/utils/utils.cpp
 HEADERS += \
     src/androidwindow.h \
     src/leftsidebar.h \
     src/pushbutton.h \
+    src/server/server.h \
     src/utils/utils.h
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

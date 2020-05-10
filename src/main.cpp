@@ -1,6 +1,10 @@
 #include "androidwindow.h"
 #include <DApplication>
+#include <QtCore/QCoreApplication>
+#include <QtCore/QCommandLineParser>
+#include <QtCore/QCommandLineOption>
 #include <DWidgetUtil>
+
 DWIDGET_USE_NAMESPACE
 int main(int argc, char *argv[])
 {
@@ -21,6 +25,7 @@ int main(int argc, char *argv[])
     AndroidWindow w;
     w.show();
     Dtk::Widget::moveToCenter(&w);
+
 
     return app.exec();
 }
