@@ -2,9 +2,10 @@
 #define ANDROIDWINDOW_H
 
 #include <DMainWindow>
-#include "leftsidebar.h"
+#include "widgets/leftsidebar.h"
 #include <QStackedLayout>
 #include <QPushButton>
+#include "screens/screendevices.h"
 using namespace Dtk::Core;
 using namespace Dtk::Widget;
 class AndroidWindow : public DMainWindow
@@ -23,5 +24,6 @@ private:
     LeftSideBar *m_leftSideBar;
     QStackedLayout *m_stackedLayout;
     QPushButton *btn;
+    ScreenDevices *devices;
 };
 #endif // ANDROIDWINDOW_H

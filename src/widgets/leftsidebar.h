@@ -3,6 +3,7 @@
 
 #include <QWidget>
 #include <QVBoxLayout>
+#include <QScrollArea>
 #include <QButtonGroup>
 
 class LeftSideBar : public QWidget
@@ -22,6 +23,7 @@ private:
 private:
     QVBoxLayout *m_layout;
     QButtonGroup *m_buttonGroup;
+    QScrollArea *scrollArea;
     QStringList m_buttonNameList;
 };
 

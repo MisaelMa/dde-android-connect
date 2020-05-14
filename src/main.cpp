@@ -5,7 +5,8 @@
 #include <QtCore/QCommandLineOption>
 #include <DWidgetUtil>
 
-DWIDGET_USE_NAMESPACE
+using namespace Dtk::Core;
+using namespace Dtk::Widget;
 int main(int argc, char *argv[])
 {
     DApplication::loadDXcbPlugin();

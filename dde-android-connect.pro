@@ -22,13 +22,19 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
     src/main.cpp \
     src/androidwindow.cpp \
-    src/leftsidebar.cpp \
+    src/screens/screendevices.cpp \
+    src/utils/roundedwidget.cpp \
+    src/widgets/carddevices.cpp \
+    src/widgets/leftsidebar.cpp \
     src/pushbutton.cpp \
     src/server/server.cpp \
      src/utils/utils.cpp
 HEADERS += \
     src/androidwindow.h \
-    src/leftsidebar.h \
+    src/screens/screendevices.h \
+    src/utils/roundedwidget.h \
+    src/widgets/carddevices.h \
+    src/widgets/leftsidebar.h \
     src/pushbutton.h \
     src/server/server.h \
     src/utils/utils.h
